@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2017 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.jabra.speak410.firmware</id>
+  <name>SPEAK 410</name>
+  <summary>Firmware for the Jabra SPEAK 410 speakerphone</summary>
+  <description>
+    <p>
+      Updating the firmware on your SPEAK 410 improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_0B0E&PID_0412 -->
+    <firmware type="flashed">537f7800-8529-5656-b2fa-b0901fe91696</firmware>
+    <!-- USB\VID_0B0E&PID_0411 (DFU mode) -->
+    <firmware type="flashed">1764c519-4723-5514-baf9-3b42970de487</firmware>
+  </provides>
+  <url type="homepage">https://www.jabra.com/business/speakerphones/jabra-speak-series/jabra-speak-410</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>Jabra</developer_name>
+  <releases>
+    <release urgency="medium" version="1.11" date="2014-05-22">
+      <checksum filename="Jabra_SPEAK_410_USB-1.11.0.dfu" target="content"/>
+      <description>
+        <p>
+          New features and enhancements:
+        </p>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <requires>
+    <!-- only newer versions of fwupd know how to write to this hardware -->
+    <id compare="ge" version="1.0.1">org.freedesktop.fwupd</id>
+  </requires>
+</component>
