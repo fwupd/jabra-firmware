@@ -11,7 +11,7 @@ Jabra_SPEAK_510_USB-2.10.0.dfu:
 	wget -N https://www.jabra.com/Firmware_Data/Jabra_SPEAK_510_USB-2-10-0.dfu -O $@
 
 clean:
-	rm *.cab
+	rm -f *.cab *.dfu
 
 check: $(METAINFO_FILES)
 	appstream-util validate-relax $(METAINFO_FILES)
