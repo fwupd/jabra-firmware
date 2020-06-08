@@ -22,7 +22,7 @@
   <developer_name>Jabra</developer_name>
   <releases>
     <release urgency="medium" version="2.31" date="2020-02-25">
-      <checksum filename="Jabra_SPEAK_510_USB-2-31-0.dfu" target="content"/>
+      <checksum filename="Jabra_SPEAK_510_USB-v2.31.0-US_EN-leo_2.dfu" target="content"/>
       <description>
         <p>
 	  Performance and stability improvements
