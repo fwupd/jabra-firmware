@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2017 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.jabra.speak810.firmware</id>
+  <name>SPEAK 810</name>
+  <summary>Firmware for the Jabra SPEAK 810 speakerphone</summary>
+  <description>
+    <p>
+      Updating the firmware on your SPEAK 810 improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_0B0E&PID_2456 -->
+    <firmware type="flashed">5f8337e6-4744-5f86-87c9-ee78bcfc7829</firmware>
+    <!-- USB\VID_0B0E&PID_0971 (DFU mode) -->
+    <firmware type="flashed">8f244d89-d2b0-5ca1-823b-0a49b0eb6167</firmware>
+  </provides>
+  <url type="homepage">https://www.jabra.com/business/speakerphones/jabra-speak-series/jabra-speak-810</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>Jabra</developer_name>
+  <releases>
+    <release urgency="medium" version="1.8" date="2018-06-20">
+      <checksum filename="Jabra_SPEAK_810-v1.8.0-US_EN-default.dfu" target="content"/>
+      <description>
+        <p>
+          New features and enhancements:
+        </p>
+        <ul>
+	  <li>Solved a rare Mute loop issue were the Speak 810 would go constantly switch between mute on to mute off.</li>
+	  <li>Fixed an issue that could cause the Speak 810 to go into firmware update mode after pairing.</li>
+	  <li>Audio improvements when used with Linux OS</li>
+	  <li>Added support for Jabra Link 370/OTA via Jabra Link 370</li>
+	  <li>Minor improvements</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <requires>
+    <!-- only newer versions of fwupd know how to write to this hardware -->
+    <id compare="ge" version="1.0.1">org.freedesktop.fwupd</id>
+  </requires>
+</component>
