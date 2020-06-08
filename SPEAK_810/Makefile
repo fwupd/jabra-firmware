@@ -1,6 +1,6 @@
 
 all:
-	make -C 1.3
+	make -C 1.8
 
 clean:
-	make -C 1.3 clean
+	make -C 1.8 clean
