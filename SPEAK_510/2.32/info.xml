@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<buildVector version="2.32.0" productName="Jabra SPEAK 510 USB" releaseDate="2020-06-12">
+  <targetUsbPids>
+    <usbPid>0x0421</usbPid>
+  </targetUsbPids>
+  <minFirmwareUpdaterAppVersion>5.0.0.0</minFirmwareUpdaterAppVersion>
+  <files>
+    <!-- US English -->
+    <file name="Jabra_SPEAK_510_USB-v2.32.0-US_EN-leo_2.dfu">
+      <content>firmware</content>
+      <version>2.32.0</version>
+      <target>headset</target>
+      <language id="0x0409">English</language>
+      <partition>0</partition>
+      <crc>0xbadcf550</crc>
+    </file>
+  </files>
+</buildVector>
+
