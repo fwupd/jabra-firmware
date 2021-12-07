@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2017 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.jabra.speak510.firmware</id>
+  <name>SPEAK 510</name>
+  <summary>Firmware for the Jabra SPEAK 510 speakerphone</summary>
+  <description>
+    <p>
+      Updating the firmware on your SPEAK 510 improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_0B0E&PID_0420 -->
+    <firmware type="flashed">6695abef-6c60-5cbb-b8c1-2228b2c389e5</firmware>
+    <!-- USB\VID_0B0E&PID_0421 (DFU mode) -->
+    <firmware type="flashed">443b9b32-7603-5c3a-bb30-291a7d8d6dbd</firmware>
+  </provides>
+  <url type="homepage">https://www.jabra.com/business/speakerphones/jabra-speak-series/jabra-speak-510</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>Jabra</developer_name>
+  <releases>
+    <release urgency="medium" version="2.31" date="2020-02-25">
+      <checksum filename="Jabra_SPEAK_510_USB-v2.31.0-US_EN-leo_2.dfu" target="content"/>
+      <description>
+        <p>
+	  Performance and stability improvements
+        </p>
+      </description>
+    </release>
+  </releases>
+  <requires>
+    <!-- only newer versions of fwupd know how to write to this hardware -->
+    <id compare="ge" version="1.0.1">org.freedesktop.fwupd</id>
+  </requires>
+</component>
